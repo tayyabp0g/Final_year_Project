@@ -1,0 +1,51 @@
+[2026-01-28T06:24:49.199Z] [ERROR] ❌ Database connection failed
+[2026-01-28T06:25:21.334Z] [ERROR] ❌ Database connection failed
+[2026-01-28T06:34:32.368Z] [ERROR] ❌ Database connection failed
+[2026-01-28T12:40:22.442Z] [INFO] ✅ MySQL Database connected successfully
+[2026-01-28T12:40:22.466Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-01-28T12:42:08.810Z] [INFO] ✅ MySQL Database connected successfully
+[2026-01-28T12:42:08.820Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-01-28T12:52:30.236Z] [INFO] ✅ MySQL Database connected successfully
+[2026-01-28T12:52:30.284Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-01-28T12:56:28.243Z] [INFO] 📨 POST /api/auth/signup
+[2026-01-28T12:56:29.328Z] [INFO] ✅ New user registered: ali (ID: 1)
+[2026-01-28T13:03:20.048Z] [INFO] ✅ MySQL Database connected successfully
+[2026-01-28T13:03:20.056Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-01-28T13:06:20.813Z] [INFO] 📨 POST /api/auth/signup
+[2026-01-28T13:06:21.235Z] [INFO] ✅ New user registered: testuser (ID: 2)
+[2026-01-28T13:06:53.860Z] [INFO] 📨 POST /api/auth/login
+[2026-01-28T13:06:53.874Z] [WARN] Login attempt with non-existent username: testuser@test.com
+[2026-01-28T13:07:05.470Z] [INFO] 📨 POST /api/auth/login
+[2026-01-28T13:07:05.804Z] [INFO] ✅ User logged in: testuser (ID: 2)

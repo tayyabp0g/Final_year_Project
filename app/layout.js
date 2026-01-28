@@ -1,4 +1,5 @@
 import './globals.css';
+import { AuthProvider } from '../context/AuthContext';
 
 export const metadata = {
   title: 'AutoSRS.ai',
@@ -11,7 +12,11 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
       </head>
-      <body>{children}</body>
+      <body>
+        <AuthProvider>
+          {children}
+        </AuthProvider>
+      </body>
     </html>
   );
 }

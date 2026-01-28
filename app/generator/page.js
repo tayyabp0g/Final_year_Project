@@ -1,14 +1,24 @@
 "use client";
 import { useState, useEffect } from "react";
-import { Send, Menu, Plus, MessageSquare, FileText, Download, User } from "lucide-react";
+import { Send, Menu, Plus, MessageSquare, FileText, Download, User, LogOut } from "lucide-react";
 import { motion } from "framer-motion";
+import { useRouter } from "next/navigation";
+import { useAuth } from "../../context/AuthContext";
+import { withAuth } from "../../context/withAuth";
 
-export default function GeneratorPage() {
+function GeneratorPage() {
+  const router = useRouter();
+  const { user, logout, token } = useAuth();
   const [isSidebarOpen, setSidebarOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
+
+  const handleLogout = () => {
+    logout();
+    router.push('/');
+  };
 
   useEffect(() => {
     const handleResize = () => {
@@ -74,15 +84,22 @@ export default function GeneratorPage() {
           ))}
         </div>
 
-        <div className="p-4 border-t border-white/10">
+        <div className="p-4 border-t border-white/10 space-y-2">
           <button className="flex items-center gap-3 w-full px-2 py-2 hover:bg-white/5 rounded-lg transition">
             <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
               <User className="w-4 h-4 text-white" />
             </div>
             <div className="text-sm text-left">
-              <div className="font-medium">User Name</div>
+              <div className="font-medium">{user?.username || 'User'}</div>
               <div className="text-xs text-gray-400">Free Plan</div>
             </div>
+          </button>
+          <button 
+            onClick={handleLogout}
+            className="flex items-center gap-3 w-full px-2 py-2 text-red-400 hover:bg-red-500/20 rounded-lg transition text-sm"
+          >
+            <LogOut className="w-4 h-4" />
+            Logout
           </button>
         </div>
       </motion.aside>
@@ -215,3 +232,5 @@ function CardExample({ text, onClick }) {
     </button>
   );
 }
+
+export default withAuth(GeneratorPage);
