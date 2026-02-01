@@ -1,0 +1,176 @@
+[2026-02-01T13:53:56.131Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T13:53:56.167Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T13:56:33.666Z] [INFO] 📨 GET /
+[2026-02-01T13:56:33.671Z] [WARN] 404 Not Found: GET /
+[2026-02-01T13:56:34.378Z] [INFO] 📨 GET /favicon.ico
+[2026-02-01T13:56:34.381Z] [WARN] 404 Not Found: GET /favicon.ico
+[2026-02-01T14:02:55.682Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T14:02:55.693Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T14:11:02.610Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T14:11:02.619Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T14:21:39.989Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T14:21:39.996Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T15:34:41.268Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T15:34:41.274Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T15:37:58.058Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T15:37:58.407Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T15:38:19.725Z] [INFO] 📨 GET /
+[2026-02-01T15:38:19.807Z] [WARN] 404 Not Found: GET /
+[2026-02-01T15:38:20.569Z] [INFO] 📨 GET /
+[2026-02-01T15:38:20.591Z] [WARN] 404 Not Found: GET /
+[2026-02-01T15:38:21.344Z] [INFO] 📨 GET /favicon.ico
+[2026-02-01T15:38:21.358Z] [WARN] 404 Not Found: GET /favicon.ico
+[2026-02-01T15:45:52.886Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T15:45:52.893Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T15:47:14.149Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T15:47:14.155Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T15:48:31.811Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T15:48:31.817Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T15:55:28.005Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T15:55:28.029Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T16:05:09.126Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T16:05:09.150Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T16:05:53.391Z] [INFO] 📨 POST /api/auth/signup
+[2026-02-01T16:05:54.833Z] [INFO] ✅ New user registered: tayyab (ID: 3)
+[2026-02-01T16:06:09.068Z] [INFO] 📨 POST /api/auth/login
+[2026-02-01T16:06:10.094Z] [INFO] ✅ User logged in: tayyab (ID: 3)
+[2026-02-01T16:07:40.990Z] [INFO] 📨 POST /api/auth/login
+[2026-02-01T16:07:41.456Z] [INFO] ✅ User logged in: ali (ID: 1)
+[2026-02-01T16:08:37.055Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T16:08:37.063Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T16:20:36.377Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T16:20:36.396Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T16:22:16.201Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T16:22:16.278Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T16:25:53.241Z] [INFO] ✅ MySQL Database connected successfully
+[2026-02-01T16:25:53.250Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-01T16:27:14.757Z] [INFO] 📨 POST /api/auth/login
+[2026-02-01T16:27:15.268Z] [INFO] ✅ User logged in: ali (ID: 1)
+[2026-02-01T16:29:53.914Z] [INFO] 📨 POST /api/auth/login
+[2026-02-01T16:29:56.389Z] [INFO] ✅ User logged in: ali (ID: 1)
+[2026-02-01T16:32:10.527Z] [INFO] 📨 POST /api/auth/signup
+[2026-02-01T16:32:13.356Z] [INFO] ✅ New user registered: talal (ID: 4)
+[2026-02-01T16:32:23.192Z] [INFO] 📨 POST /api/auth/login
+[2026-02-01T16:32:25.945Z] [INFO] ✅ User logged in: talal (ID: 4)
+[2026-02-01T16:33:04.754Z] [INFO] 📨 POST /api/auth/login
+[2026-02-01T16:33:08.085Z] [INFO] ✅ User logged in: talal (ID: 4)

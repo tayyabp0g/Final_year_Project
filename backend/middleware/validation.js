@@ -5,8 +5,9 @@ const validateUsername = (username) => {
   // 2. Can only contain letters, numbers, and underscores
   // 3. Cannot start with a number
   // 4. Cannot contain spaces
+  // Username will be lowercased for storage
 
-  const usernameRegex = /^[a-zA-Z_][a-zA-Z0-9_]{2,19}$/;
+  const usernameRegex = /^[a-z_][a-z0-9_]{2,19}$/;
 
   if (!username) {
     return {

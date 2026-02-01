@@ -7,7 +7,13 @@ const logger = require('../utils/logger');
 // Signup Controller
 exports.signup = async (req, res) => {
   try {
-    const { username, email, password, confirmPassword } = req.body;
+    let { username, email, password, confirmPassword } = req.body;
+
+    // Normalize inputs: trim and lowercase for consistency
+    username = username ? username.trim().toLowerCase() : '';
+    email = email ? email.trim().toLowerCase() : '';
+    password = password ? password.trim() : '';
+    confirmPassword = confirmPassword ? confirmPassword.trim() : '';
 
     // 1. Validate all inputs are provided
     if (!username || !email || !password || !confirmPassword) {
@@ -35,7 +41,7 @@ exports.signup = async (req, res) => {
       });
     }
 
-    // 4. Validate password
+    // 4. Validate password (password is case-sensitive)
     const passwordValidation = validatePassword(password);
     if (!passwordValidation.valid) {
       return res.status(400).json({
@@ -55,9 +61,9 @@ exports.signup = async (req, res) => {
     // Get connection
     const connection = await pool.getConnection();
 
-    // 6. Check if username already exists
+    // 6. Check if username already exists (case-insensitive)
     const [existingUsername] = await connection.query(
-      'SELECT id FROM users WHERE username = ?',
+      'SELECT id FROM users WHERE LOWER(username) = ?',
       [username]
     );
 
@@ -128,7 +134,11 @@ exports.signup = async (req, res) => {
 // Login Controller
 exports.login = async (req, res) => {
   try {
-    const { username, password } = req.body;
+    let { username, password } = req.body;
+    
+    // Normalize inputs: trim and lowercase for consistency
+    username = username ? username.trim().toLowerCase() : '';
+    password = password ? password.trim() : '';
 
     // 1. Validate inputs
     if (!username || !password) {
@@ -141,9 +151,9 @@ exports.login = async (req, res) => {
     // Get connection
     const connection = await pool.getConnection();
 
-    // 2. Check if user exists
+    // 2. Check if user exists (case-insensitive)
     const [users] = await connection.query(
-      'SELECT id, username, email, password FROM users WHERE username = ?',
+      'SELECT id, username, email, password FROM users WHERE LOWER(username) = ?',
       [username]
     );
 

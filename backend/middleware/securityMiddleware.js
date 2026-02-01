@@ -12,7 +12,7 @@ const loginLimiter = rateLimit({
 
 const signupLimiter = rateLimit({
   windowMs: 60 * 60 * 1000, // 1 hour
-  max: 3, // 3 signup attempts per hour
+  max: 100, // Increased for testing - change back to 3 in production
   message: 'Too many signup attempts. Please try again later.',
   standardHeaders: true,
   legacyHeaders: false,
@@ -28,11 +28,12 @@ const chatLimiter = rateLimit({
 
 // Input sanitization
 const sanitizeInput = (req, res, next) => {
+  // Only trim inputs - do NOT lowercase them here, let controllers handle normalization
   if (req.body.username) {
-    req.body.username = validator.trim(req.body.username).toLowerCase();
+    req.body.username = validator.trim(req.body.username);
   }
   if (req.body.email) {
-    req.body.email = validator.trim(req.body.email).toLowerCase();
+    req.body.email = validator.trim(req.body.email);
   }
   if (req.body.password) {
     req.body.password = validator.trim(req.body.password);
@@ -42,6 +43,9 @@ const sanitizeInput = (req, res, next) => {
   }
   if (req.body.response) {
     req.body.response = validator.trim(req.body.response);
+  }
+  if (req.body.confirmPassword) {
+    req.body.confirmPassword = validator.trim(req.body.confirmPassword);
   }
   next();
 };
