@@ -49,3 +49,8 @@
 [2026-02-10T05:17:47.661Z] [INFO] ✅ User logged in: tayyab (ID: 2)
 [2026-02-10T05:39:43.901Z] [INFO] 📨 POST /api/auth/login
 [2026-02-10T05:39:44.192Z] [INFO] ✅ User logged in: tayyab (ID: 2)
+<<<<<<< HEAD
+=======
+[2026-02-10T13:29:30.355Z] [INFO] 📨 POST /api/auth/login
+[2026-02-10T13:29:31.995Z] [INFO] ✅ User logged in: tayyab (ID: 2)
+>>>>>>> 62c2791b8363e02f6c0a046c68ef1e4a54e2ee47

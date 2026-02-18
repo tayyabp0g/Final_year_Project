@@ -1,31 +1,19 @@
-const mysql = require('mysql2/promise');
+// z:\up dated Final_year_Project\backend\config\database.js
+const mysql = require('mysql2');
 require('dotenv').config();
-const logger = require('../utils/logger');
 
-// Connection pool for MySQL
 const pool = mysql.createPool({
   host: process.env.DB_HOST,
   user: process.env.DB_USER,
   password: process.env.DB_PASSWORD,
   database: process.env.DB_NAME,
+  port: process.env.DB_PORT || 3306,
   waitForConnections: true,
   connectionLimit: 10,
   queueLimit: 0,
+  ssl: {
+    rejectUnauthorized: false // Aiven Cloud DB ke liye zaroori hai
+  }
 });
 
-// Test database connection
-const testConnection = async () => {
-  try {
-    const connection = await pool.getConnection();
-    logger.info('✅ MySQL Database connected successfully');
-    connection.release();
-  } catch (error) {
-    logger.error('❌ Database connection failed', error.message);
-    process.exit(1);
-  }
-};
-
-module.exports = {
-  pool,
-  testConnection,
-};
+module.exports = pool.promise();

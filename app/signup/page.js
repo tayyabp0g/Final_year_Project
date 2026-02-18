@@ -65,7 +65,7 @@ export default function SignupPage() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="w-full max-w-md"
+          className="w-full max-w-sm"
         >
           <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 shadow-2xl">
             <div className="text-center mb-2">
@@ -111,7 +111,7 @@ export default function SignupPage() {
                     className="w-full pl-10 pr-4 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-base text-white placeholder-gray-500 transition"
                   />
                 </div>
-                <p className="text-xs text-gray-400 mt-1">3-20 chars, letters/numbers/underscore</p>
+                <p className="text-[10px] text-gray-400 mt-0.5">3-20 chars, letters/numbers/underscore</p>
               </div>
 
               <div>
@@ -150,12 +150,12 @@ export default function SignupPage() {
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
-                    className="absolute right-3 top-3 text-gray-400 hover:text-gray-300 transition"
+                    className="absolute right-3 top-2.5 text-gray-400 hover:text-gray-300 transition"
                   >
                     {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                   </button>
                 </div>
-                <p className="text-xs text-gray-400 mt-1">
+                <p className="text-[10px] text-gray-400 mt-0.5">
                   Min 6 chars: Uppercase, lowercase, number, special (!@#$%^&*)
                 </p>
               </div>
@@ -178,7 +178,7 @@ export default function SignupPage() {
                   <button
                     type="button"
                     onClick={() => setShowConfirmPassword(!showConfirmPassword)}
-                    className="absolute right-3 top-3 text-gray-400 hover:text-gray-300 transition"
+                    className="absolute right-3 top-2.5 text-gray-400 hover:text-gray-300 transition"
                   >
                     {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                   </button>
