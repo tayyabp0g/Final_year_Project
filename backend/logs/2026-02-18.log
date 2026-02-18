@@ -73,3 +73,35 @@
 [2026-02-18T02:44:54.859Z] [INFO] ✅ User logged in: tayyab (ID: 2)
 [2026-02-18T02:53:49.056Z] [INFO] 📨 POST /api/auth/login
 [2026-02-18T02:53:49.429Z] [INFO] ✅ User logged in: tayyab (ID: 2)
+[2026-02-18T03:00:27.737Z] [ERROR] Failed to start server - testConnection is not a function
+[2026-02-18T03:03:18.658Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-18T03:22:46.050Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-18T03:35:25.824Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-02-18T03:35:27.865Z] [INFO] 📨 POST /api/auth/login
+[2026-02-18T03:35:28.297Z] [INFO] ✅ User logged in: tayyab (ID: 2)
+[2026-02-18T03:37:47.937Z] [INFO] 📨 POST /api/auth/login
+[2026-02-18T03:37:48.321Z] [INFO] ✅ User logged in: tayyab (ID: 2)

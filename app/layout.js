@@ -1,22 +1,23 @@
 import { AuthProvider } from "@/context/AuthContext";
 import "./globals.css";
-import Navbar from "@/components/Navbar"; // Agar Navbar alag component hai
+// Note: Humne Navbar ko named import { Navbar } ke sath import kiya hai
+import { Navbar } from "@/components/Navbar";
 
 export const metadata = {
   title: "AutoSRS.AI",
   description: "Authentication System",
 };
 
+// Yeh 'export default' hona zaroori hai
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body>
-        {/* Puri app ko AuthProvider se wrap karna zaroori hai */}
         <AuthProvider>
           <Navbar />
           {children}
         </AuthProvider>
       </body>
-    </html> 
+    </html>
   );
 }

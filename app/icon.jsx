@@ -14,27 +14,14 @@ export default function Icon() {
       <div
         style={{
           fontSize: 24,
-<<<<<<< HEAD
-=======
-          background: 'black',
->>>>>>> 62c2791b8363e02f6c0a046c68ef1e4a54e2ee47
           width: '100%',
           height: '100%',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
-<<<<<<< HEAD
         }}
       >
         🤖
-        
-=======
-          color: 'white',
-          borderRadius: '20%',
-        }}
-      >
-        🤖
->>>>>>> 62c2791b8363e02f6c0a046c68ef1e4a54e2ee47
       </div>
     ),
     {

@@ -12,10 +12,7 @@
     "framer-motion": "^12.23.26",
     "lucide-react": "^0.557.0",
     "next": "^16.1.6",
-<<<<<<< HEAD
     "pdfkit": "^0.17.2",
-=======
->>>>>>> 62c2791b8363e02f6c0a046c68ef1e4a54e2ee47
     "react": "19.2.1",
     "react-dom": "19.2.1"
   },
