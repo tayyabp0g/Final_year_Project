@@ -4,7 +4,6 @@ import { Send, Menu, Plus, MessageSquare, FileText, Download, User, LogOut } fro
 import { motion } from "framer-motion";
 import { useRouter } from "next/navigation";
 import { useAuth } from "../../context/AuthContext";
-import { withAuth } from "../../context/withAuth";
 
 function GeneratorPage() {
   const router = useRouter();
@@ -14,6 +13,8 @@ function GeneratorPage() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
+  const [history, setHistory] = useState([]);
+  const [showUser, setShowUser] = useState(false);
 
   const handleLogout = () => {
     logout();
@@ -35,27 +36,93 @@ function GeneratorPage() {
     return () => window.removeEventListener('resize', handleResize);
   }, []);
   
-  // Dummy history data
-  const history = ["E-Commerce SRS", "Hospital Mgmt System", "Portfolio Website"];
+  useEffect(() => {
+    if (token) {
+      fetchHistory();
+    }
+  }, [token]);
 
-  const handleSend = () => {
+  useEffect(() => {
+    if (user) {
+      const timer = setTimeout(() => setShowUser(true), 1000);
+      return () => clearTimeout(timer);
+    } else {
+      setShowUser(false);
+    }
+  }, [user]);
+
+  const fetchHistory = async () => {
+    try {
+      const res = await fetch('http://localhost:5000/api/chat/history', {
+        headers: { 'Authorization': `Bearer ${token}` }
+      });
+      const data = await res.json();
+      if (data.success) {
+        setHistory(data.data.chats.map(chat => chat.message));
+      }
+    } catch (err) {
+      console.error("Failed to fetch history", err);
+    }
+  };
+
+  const handleSend = async () => {
     if (!input.trim()) return;
     
     const userMessage = { text: input, sender: 'user', id: Date.now() };
-    setMessages(prev => [...prev, userMessage]);
+    const updatedMessages = [...messages, userMessage];
+    
+    setMessages(updatedMessages);
     setInput("");
     setIsTyping(true);
     
-    // Simulate AI response
-    setTimeout(() => {
-      const aiMessage = { 
-        text: "I'm analyzing your project requirements and generating the SRS document. This will take a moment...", 
+    try {
+      // Convert messages to API format (role/content)
+      const apiMessages = updatedMessages.map(msg => ({
+        role: msg.sender === 'user' ? 'user' : 'assistant',
+        content: msg.text
+      }));
+
+      const response = await fetch("/api/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ messages: apiMessages }),
+      });
+
+      const data = await response.json();
+      if (data.error) throw new Error(data.error);
+
+      const aiMessage = {
+        text: data.content,
         sender: 'ai', 
         id: Date.now() + 1 
       };
       setMessages(prev => [...prev, aiMessage]);
+
+      if (token) {
+        try {
+          await fetch('http://localhost:5000/api/chat/save', {
+            method: 'POST',
+            headers: { 
+              'Content-Type': 'application/json',
+              'Authorization': `Bearer ${token}` 
+            },
+            body: JSON.stringify({ message: userMessage.text, response: data.content })
+          });
+          fetchHistory();
+        } catch (err) {
+          console.error("Failed to save chat", err);
+        }
+      }
+    } catch (error) {
+      console.error("Chat Error:", error);
+      setMessages(prev => [...prev, { 
+        text: `Error: ${error.message || "Connection failed. Please check your API key and restart server."}`, 
+        sender: 'ai', 
+        id: Date.now() + 1 
+      }]);
+    } finally {
       setIsTyping(false);
-    }, 2000);
+    }
   };
 
   return (
@@ -84,24 +151,26 @@ function GeneratorPage() {
           ))}
         </div>
 
-        <div className="p-4 border-t border-white/10 space-y-2">
-          <button className="flex items-center gap-3 w-full px-2 py-2 hover:bg-white/5 rounded-lg transition">
-            <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
-              <User className="w-4 h-4 text-white" />
-            </div>
-            <div className="text-sm text-left">
-              <div className="font-medium">{user?.username || 'User'}</div>
-              <div className="text-xs text-gray-400">Free Plan</div>
-            </div>
-          </button>
-          <button 
-            onClick={handleLogout}
-            className="flex items-center gap-3 w-full px-2 py-2 text-red-400 hover:bg-red-500/20 rounded-lg transition text-sm"
-          >
-            <LogOut className="w-4 h-4" />
-            Logout
-          </button>
-        </div>
+        {user && showUser && (
+          <div className="p-4 border-t border-white/10 space-y-2">
+            <button className="flex items-center gap-3 w-full px-2 py-2 hover:bg-white/5 rounded-lg transition">
+              <div className="w-8 h-8 rounded-full bg-gradient-to-br from-blue-500 to-purple-500 flex items-center justify-center">
+                <User className="w-4 h-4 text-white" />
+              </div>
+              <div className="text-sm text-left">
+                <div className="font-medium">{user.username || 'User'}</div>
+                <div className="text-xs text-gray-400">Free Plan</div>
+              </div>
+            </button>
+            <button 
+              onClick={handleLogout}
+              className="flex items-center gap-3 w-full px-2 py-2 text-red-400 hover:bg-red-500/20 rounded-lg transition text-sm"
+            >
+              <LogOut className="w-4 h-4" />
+              Logout
+            </button>
+          </div>
+        )}
       </motion.aside>
 
       <main className="flex-1 flex flex-col relative">
@@ -233,4 +302,4 @@ function CardExample({ text, onClick }) {
   );
 }
 
-export default withAuth(GeneratorPage);
+export default GeneratorPage;

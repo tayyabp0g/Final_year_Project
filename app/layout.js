@@ -1,22 +1,22 @@
-import './globals.css';
-import { AuthProvider } from '../context/AuthContext';
+import { AuthProvider } from "@/context/AuthContext";
+import "./globals.css";
+import Navbar from "@/components/Navbar"; // Agar Navbar alag component hai
 
 export const metadata = {
-  title: 'AutoSRS.ai',
-  description: 'Generate IEEE 830 SRS documents',
+  title: "AutoSRS.AI",
+  description: "Authentication System",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head>
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-      </head>
       <body>
+        {/* Puri app ko AuthProvider se wrap karna zaroori hai */}
         <AuthProvider>
+          <Navbar />
           {children}
         </AuthProvider>
       </body>
-    </html>
+    </html> 
   );
 }

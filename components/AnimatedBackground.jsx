@@ -1,22 +1,33 @@
 "use client";
 import { motion } from "framer-motion";
-import { useMemo } from "react";
+import { useState, useEffect } from "react";
 
 export default function AnimatedBackground({ children }) {
-  // Generate random star positions
-  const stars = useMemo(() => Array.from({ length: 50 }, (_, i) => ({
-    id: i,
-    // eslint-disable-next-line react-hooks/purity
-    x: Math.random() * 100,
-    // eslint-disable-next-line react-hooks/purity
-    y: Math.random() * 100,
-    // eslint-disable-next-line react-hooks/purity
-    size: Math.random() * 2 + 1,
-    // eslint-disable-next-line react-hooks/purity
-    delay: Math.random() * 5,
-    // eslint-disable-next-line react-hooks/purity
-    duration: 2 + Math.random() * 3,
-  })), []);
+  const [mounted, setMounted] = useState(false);
+  const [stars, setStars] = useState([]);
+
+  useEffect(() => {
+    // Generate random star positions only on client
+    const generatedStars = Array.from({ length: 50 }, (_, i) => ({
+      id: i,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      size: Math.random() * 2 + 1,
+      delay: Math.random() * 5,
+      duration: 2 + Math.random() * 3,
+    }));
+    setStars(generatedStars);
+    setMounted(true);
+  }, []);
+
+  // Return empty div first to match server render, then render with stars after mount
+  if (!mounted) {
+    return (
+      <div className="relative min-h-screen w-full overflow-hidden bg-black text-white selection:bg-blue-500 selection:text-white">
+        {children}
+      </div>
+    );
+  }
 
   return (
     <div className="relative min-h-screen w-full overflow-hidden bg-black text-white selection:bg-blue-500 selection:text-white">

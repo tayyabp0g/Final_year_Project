@@ -60,16 +60,16 @@ export default function SignupPage() {
 
   return (
     <AnimatedBackground>
-      <div className="min-h-screen flex items-center justify-center px-4">
+      <div className="min-h-screen flex items-center justify-center px-4 pt-24 pb-10">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
           className="w-full max-w-md"
         >
-          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-8 shadow-2xl">
-            <div className="text-center mb-8">
-              <div className="text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-2">
+          <div className="backdrop-blur-md bg-white/10 border border-white/20 rounded-2xl p-6 shadow-2xl">
+            <div className="text-center mb-2">
+              <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500 mb-2">
                 AutoSRS.ai
               </div>
               <p className="text-gray-300">Create your account</p>
@@ -94,13 +94,13 @@ export default function SignupPage() {
               </motion.div>
             )}
 
-            <form onSubmit={handleSubmit} className="space-y-4">
+            <form onSubmit={handleSubmit} className="space-y-3">
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-300 mb-1">
                   Username
                 </label>
                 <div className="relative">
-                  <User size={18} className="absolute left-3 top-3 text-gray-400" />
+                  <User size={20} className="absolute left-3 top-3 text-gray-400" />
                   <input
                     type="text"
                     name="username"
@@ -108,18 +108,18 @@ export default function SignupPage() {
                     onChange={handleChange}
                     placeholder="john_doe"
                     required
-                    className="w-full pl-10 pr-4 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-white placeholder-gray-500 transition"
+                    className="w-full pl-10 pr-4 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-base text-white placeholder-gray-500 transition"
                   />
                 </div>
                 <p className="text-xs text-gray-400 mt-1">3-20 chars, letters/numbers/underscore</p>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-300 mb-1">
                   Email
                 </label>
                 <div className="relative">
-                  <Mail size={18} className="absolute left-3 top-3 text-gray-400" />
+                  <Mail size={20} className="absolute left-3 top-3 text-gray-400" />
                   <input
                     type="email"
                     name="email"
@@ -127,17 +127,17 @@ export default function SignupPage() {
                     onChange={handleChange}
                     placeholder="john@example.com"
                     required
-                    className="w-full pl-10 pr-4 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-white placeholder-gray-500 transition"
+                    className="w-full pl-10 pr-4 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-base text-white placeholder-gray-500 transition"
                   />
                 </div>
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-300 mb-1">
                   Password
                 </label>
                 <div className="relative">
-                  <Lock size={18} className="absolute left-3 top-3 text-gray-400" />
+                  <Lock size={20} className="absolute left-3 top-3 text-gray-400" />
                   <input
                     type={showPassword ? 'text' : 'password'}
                     name="password"
@@ -145,14 +145,14 @@ export default function SignupPage() {
                     onChange={handleChange}
                     placeholder="••••••••"
                     required
-                    className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-white placeholder-gray-500 transition"
+                    className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-base text-white placeholder-gray-500 transition"
                   />
                   <button
                     type="button"
                     onClick={() => setShowPassword(!showPassword)}
                     className="absolute right-3 top-3 text-gray-400 hover:text-gray-300 transition"
                   >
-                    {showPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                    {showPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                   </button>
                 </div>
                 <p className="text-xs text-gray-400 mt-1">
@@ -161,11 +161,11 @@ export default function SignupPage() {
               </div>
 
               <div>
-                <label className="block text-sm font-medium text-gray-300 mb-2">
+                <label className="block text-sm font-medium text-gray-300 mb-1">
                   Confirm Password
                 </label>
                 <div className="relative">
-                  <Lock size={18} className="absolute left-3 top-3 text-gray-400" />
+                  <Lock size={20} className="absolute left-3 top-3 text-gray-400" />
                   <input
                     type={showConfirmPassword ? 'text' : 'password'}
                     name="confirmPassword"
@@ -173,14 +173,14 @@ export default function SignupPage() {
                     onChange={handleChange}
                     placeholder="••••••••"
                     required
-                    className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-white placeholder-gray-500 transition"
+                    className="w-full pl-10 pr-10 py-2.5 bg-white/5 border border-white/20 rounded-lg focus:border-blue-500 focus:outline-none focus:ring-2 focus:ring-blue-500/20 text-base text-white placeholder-gray-500 transition"
                   />
                   <button
                     type="button"
                     onClick={() => setShowConfirmPassword(!showConfirmPassword)}
                     className="absolute right-3 top-3 text-gray-400 hover:text-gray-300 transition"
                   >
-                    {showConfirmPassword ? <EyeOff size={18} /> : <Eye size={18} />}
+                    {showConfirmPassword ? <EyeOff size={20} /> : <Eye size={20} />}
                   </button>
                 </div>
               </div>
@@ -190,13 +190,13 @@ export default function SignupPage() {
                 whileTap={{ scale: 0.98 }}
                 type="submit"
                 disabled={loading}
-                className="w-full py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg font-medium text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
+                className="w-full py-2.5 bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 rounded-lg font-medium text-lg text-white transition disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 {loading ? 'Creating Account...' : 'Create Account'}
               </motion.button>
             </form>
 
-            <div className="flex items-center gap-3 my-6">
+            <div className="flex items-center gap-3 my-4">
               <div className="flex-1 h-px bg-white/10"></div>
               <span className="text-sm text-gray-400">or</span>
               <div className="flex-1 h-px bg-white/10"></div>

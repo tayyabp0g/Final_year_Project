@@ -4,72 +4,38 @@ import { useRouter } from "next/navigation";
 import { Bot, ArrowRight, FileText, Zap, LogOut } from "lucide-react";
 import AnimatedBackground from "../components/AnimatedBackground.jsx";
 import { motion } from "framer-motion";
-import { useMemo } from "react";
+import { useState, useEffect } from "react";
 import { useAuth } from "../context/AuthContext";
 
 export default function LandingPage() {
   const router = useRouter();
   const { user, token, logout } = useAuth();
+  const [mounted, setMounted] = useState(false);
+  const [particles, setParticles] = useState([]);
+  const [binaryTexts, setBinaryTexts] = useState([]);
 
-  const handleLogout = () => {
-    logout();
-    router.push('/');
-  };
+  useEffect(() => {
+    // Generate random particles only on client
+    setParticles([...Array(8)].map((_, i) => ({
+      id: i,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      duration: 4 + Math.random() * 2,
+      delay: Math.random() * 2,
+    })));
 
-  const particles = useMemo(() => [...Array(8)].map((_, i) => ({
-    id: i,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    duration: 4 + Math.random() * 2,
-    delay: Math.random() * 2,
-  })), []);
+    setBinaryTexts([...Array(3)].map((_, i) => ({
+      id: i,
+      x: Math.random() * 100,
+      y: Math.random() * 100,
+      text: Math.random() > 0.5 ? '01' : '10',
+    })));
 
-  const binaryTexts = useMemo(() => [...Array(3)].map((_, i) => ({
-    id: i,
-    x: Math.random() * 100,
-    y: Math.random() * 100,
-    text: Math.random() > 0.5 ? '01' : '10',
-  })), []);
+    setMounted(true);
+  }, []);
 
   return (
     <AnimatedBackground>
-      <nav className="flex items-center justify-between px-4 md:px-8 py-6 backdrop-blur-sm bg-white/5 border-b border-white/10">
-        <div className="text-2xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500">
-          AutoSRS.ai
-        </div>
-        <div className="flex space-x-2 md:space-x-4 items-center">
-          {token && user ? (
-            <>
-              <span className="text-sm text-gray-300 px-3 py-2">
-                👤 {user.username}
-              </span>
-              <Link
-                href="/generator"
-                className="px-3 md:px-4 py-2 text-sm bg-blue-600 rounded-lg hover:bg-blue-700 transition"
-              >
-                Chat Bot
-              </Link>
-              <button
-                onClick={handleLogout}
-                className="px-3 md:px-4 py-2 text-sm text-red-400 hover:text-red-300 transition flex items-center gap-2"
-              >
-                <LogOut size={16} />
-                Logout
-              </button>
-            </>
-          ) : (
-            <>
-              <Link href="/login" className="px-3 md:px-4 py-2 text-sm hover:text-blue-300 transition">
-                Login
-              </Link>
-              <Link href="/signup" className="px-3 md:px-4 py-2 bg-blue-600 rounded-lg hover:bg-blue-700 transition text-sm">
-                Sign Up
-              </Link>
-            </>
-          )}
-        </div>
-      </nav>
-
       <main className="flex flex-col items-center justify-center min-h-[80vh] text-center px-4">
         <h1 className="text-5xl md:text-7xl font-bold mb-6">
           Generate <span className="text-blue-500">IEEE 830</span> SRS <br /> in Minutes.
@@ -86,6 +52,7 @@ export default function LandingPage() {
         </Link>
 
       {/* AI-Themed Background Animations */}
+      {mounted && (
       <div className="fixed inset-0 pointer-events-none z-0 opacity-20">
         {/* Neural Network Nodes */}
         {[...Array(12)].map((_, i) => (
@@ -196,6 +163,7 @@ export default function LandingPage() {
           </motion.div>
         ))}
       </div>
+      )}
       </main>
     </AnimatedBackground>
   );
