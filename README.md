@@ -1,9 +1,9 @@
-<<<<<<< HEAD
+
 # 🚀 AutoSRS.AI - Complete Authentication System
 
 A production-ready authentication system built with **Next.js 16** (Frontend), **Node.js + Express** (Backend), and **MySQL** (Database).
 
----
+
 
 ## ✨ Features
 
