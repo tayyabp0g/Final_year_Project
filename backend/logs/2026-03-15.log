@@ -1,0 +1,171 @@
+[2026-03-15T17:24:33.043Z] [ERROR] Failed to start server - Access denied for user 'root'@'localhost' (using password: NO)
+[2026-03-15T17:25:18.270Z] [ERROR] Failed to start server - Access denied for user 'root'@'localhost' (using password: NO)
+[2026-03-15T17:34:35.825Z] [ERROR] Failed to start server - Access denied for user 'root'@'localhost' (using password: NO)
+[2026-03-15T17:43:47.692Z] [ERROR] Failed to start server - Access denied for user 'root'@'localhost' (using password: NO)
+[2026-03-15T17:45:58.701Z] [ERROR] Failed to start server - Access denied for user 'root'@'localhost' (using password: NO)
+[2026-03-15T17:46:42.117Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-03-15T17:48:24.531Z] [INFO] 📨 POST /api/auth/login
+[2026-03-15T17:48:26.484Z] [INFO] ✅ User logged in: tayyab (ID: 3)
+[2026-03-15T17:48:44.143Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:48:44.361Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:48:44.670Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:48:44.693Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:49:01.890Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:49:02.017Z] [INFO] 💬 Chat saved for user 3 (ID: 1)
+[2026-03-15T17:49:02.040Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:49:02.049Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:49:20.196Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:49:20.219Z] [INFO] 💬 Chat saved for user 3 (ID: 2)
+[2026-03-15T17:49:20.256Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:49:20.266Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:49:35.205Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:49:35.224Z] [INFO] 💬 Chat saved for user 3 (ID: 3)
+[2026-03-15T17:49:35.252Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:49:35.265Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:49:59.966Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:49:59.984Z] [INFO] 💬 Chat saved for user 3 (ID: 4)
+[2026-03-15T17:50:00.065Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:50:00.072Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:50:27.461Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:50:27.477Z] [INFO] 💬 Chat saved for user 3 (ID: 5)
+[2026-03-15T17:50:27.506Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:50:27.526Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:54:08.943Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:54:08.953Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:57:37.524Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:57:37.664Z] [INFO] 💬 Chat saved for user 3 (ID: 6)
+[2026-03-15T17:57:37.692Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:57:37.698Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:57:55.591Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:57:55.608Z] [INFO] 💬 Chat saved for user 3 (ID: 7)
+[2026-03-15T17:57:55.697Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:57:55.711Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:58:56.508Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:58:56.524Z] [INFO] 💬 Chat saved for user 3 (ID: 8)
+[2026-03-15T17:58:56.762Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:58:56.772Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T17:59:43.417Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T17:59:43.435Z] [INFO] 💬 Chat saved for user 3 (ID: 9)
+[2026-03-15T17:59:43.485Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T17:59:43.489Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:00:33.314Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:00:33.347Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:00:46.503Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:00:46.533Z] [INFO] 💬 Chat saved for user 3 (ID: 10)
+[2026-03-15T18:00:46.722Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:00:46.731Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:01:38.733Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:01:38.760Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:01:43.767Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:01:43.793Z] [INFO] 💬 Chat saved for user 3 (ID: 11)
+[2026-03-15T18:01:43.847Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:01:43.853Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:04:19.813Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-03-15T18:05:56.137Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:05:56.249Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:06:27.220Z] [INFO] 📨 POST /api/auth/login
+[2026-03-15T18:06:27.508Z] [INFO] ✅ User logged in: tayyab (ID: 3)
+[2026-03-15T18:06:33.808Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:06:33.820Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:06:33.899Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:06:33.916Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:06:42.457Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:06:42.473Z] [INFO] 💬 Chat saved for user 3 (ID: 12)
+[2026-03-15T18:06:42.522Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:06:42.526Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:07:23.324Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:07:23.486Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:07:46.372Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:07:46.385Z] [INFO] 💬 Chat saved for user 3 (ID: 13)
+[2026-03-15T18:07:46.432Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:07:46.437Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:10:46.918Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:10:46.937Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:10:47.032Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:10:47.097Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:10:51.423Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:10:51.439Z] [INFO] 💬 Chat saved for user 3 (ID: 14)
+[2026-03-15T18:10:51.461Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:10:51.472Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:14:47.226Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:14:47.234Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:15:04.106Z] [INFO] 📨 GET /api/chat/history
+[2026-03-15T18:15:04.151Z] [ERROR] GET /api/chat/history - Cannot read properties of undefined (reading 'username')
+[2026-03-15T18:22:30.927Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-03-15T18:23:21.789Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:23:22.070Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:23:25.308Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A1
+[2026-03-15T18:23:26.678Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A2
+[2026-03-15T18:23:28.158Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A3
+[2026-03-15T18:23:29.243Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A4
+[2026-03-15T18:23:31.450Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A14
+[2026-03-15T18:23:32.535Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A13
+[2026-03-15T18:23:33.759Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A12
+[2026-03-15T18:23:34.839Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A11
+[2026-03-15T18:23:36.222Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A10
+[2026-03-15T18:23:36.700Z] [INFO] 📨 GET /api/chat/conversations/legacy%3A9
+[2026-03-15T18:23:37.482Z] [INFO] 📨 GET /api/chat/conversations/legacy%3A9
+[2026-03-15T18:23:38.709Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A9
+[2026-03-15T18:23:39.888Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A8
+[2026-03-15T18:23:40.832Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A7
+[2026-03-15T18:23:41.711Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A6
+[2026-03-15T18:23:43.039Z] [INFO] 📨 DELETE /api/chat/conversations/legacy%3A5
+[2026-03-15T18:23:48.771Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:23:48.792Z] [INFO] 💬 Chat saved for user 3 (ID: 15)
+[2026-03-15T18:23:48.815Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:24:11.268Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:24:22.092Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:24:22.111Z] [INFO] 💬 Chat saved for user 3 (ID: 16)
+[2026-03-15T18:24:22.129Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:28:04.121Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:28:04.168Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:29:12.323Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-03-15T18:29:45.478Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:29:45.636Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:29:55.856Z] [INFO] 📨 GET /api/chat/conversations/eae32f5d-693a-4004-b3f4-cc2cbcd227a1
+[2026-03-15T18:36:52.258Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:38:32.248Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:38:32.316Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:39:23.011Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:39:23.046Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:39:24.501Z] [INFO] 📨 GET /api/chat/conversations/eae32f5d-693a-4004-b3f4-cc2cbcd227a1
+[2026-03-15T18:39:47.661Z] [INFO] 📨 GET /api/chat/conversations/eae32f5d-693a-4004-b3f4-cc2cbcd227a1
+[2026-03-15T18:39:54.021Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:40:03.000Z] [INFO] 📨 GET /api/chat/conversations/eae32f5d-693a-4004-b3f4-cc2cbcd227a1
+[2026-03-15T18:43:00.427Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-15T18:43:05.938Z] [INFO] 📨 GET /api/chat/conversations/eae32f5d-693a-4004-b3f4-cc2cbcd227a1
+[2026-03-15T18:43:34.183Z] [INFO] 📨 POST /api/chat/save
+[2026-03-15T18:43:34.216Z] [INFO] 💬 Chat saved for user 3 (ID: 17)
+[2026-03-15T18:43:34.242Z] [INFO] 📨 GET /api/chat/conversations

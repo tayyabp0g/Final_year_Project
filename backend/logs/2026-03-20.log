@@ -1,0 +1,47 @@
+[2026-03-20T05:50:44.839Z] [INFO] 📨 DELETE /api/chat/conversations/eebc89da-6e3f-4e36-bbeb-144187a32923
+[2026-03-20T05:50:46.838Z] [INFO] 📨 DELETE /api/chat/conversations/a7909a18-5f62-49c7-8b2d-be328a3fd6ca
+[2026-03-20T05:51:08.281Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T05:54:00.670Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T05:54:00.700Z] [INFO] 💬 Chat saved for user 3 (ID: 64)
+[2026-03-20T05:54:00.766Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T05:55:05.714Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T05:55:05.729Z] [INFO] 💬 Chat saved for user 3 (ID: 65)
+[2026-03-20T05:55:05.802Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T05:55:47.831Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T05:55:47.844Z] [INFO] 💬 Chat saved for user 3 (ID: 66)
+[2026-03-20T05:55:47.907Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T05:56:08.655Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T05:56:08.670Z] [INFO] 💬 Chat saved for user 3 (ID: 67)
+[2026-03-20T05:56:08.746Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T05:57:26.886Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T05:57:26.906Z] [INFO] 💬 Chat saved for user 3 (ID: 68)
+[2026-03-20T05:57:26.989Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:27:12.550Z] [INFO] 
+╔════════════════════════════════════════╗
+║  🚀 Chatbot Backend Server Running     ║
+║  📍 Port: 5000                        ║
+║  🔗 http://localhost:5000              ║
+║  🔐 Environment: development     ║
+║  📝 API Docs: /api                      ║
+╚════════════════════════════════════════╝
+      
+[2026-03-20T10:30:20.991Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:30:21.269Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:38:49.601Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:38:52.587Z] [INFO] 📨 DELETE /api/chat/conversations/2c895997-43a1-4a68-8160-960dbc9f8d47
+[2026-03-20T10:42:12.309Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:45:18.069Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T10:45:18.108Z] [INFO] 💬 Chat saved for user 3 (ID: 69)
+[2026-03-20T10:45:18.172Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:47:18.369Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T10:47:18.403Z] [INFO] 💬 Chat saved for user 3 (ID: 70)
+[2026-03-20T10:47:18.484Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:49:37.939Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T10:49:37.993Z] [INFO] 💬 Chat saved for user 3 (ID: 71)
+[2026-03-20T10:49:38.168Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:52:08.444Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T10:52:08.486Z] [INFO] 💬 Chat saved for user 3 (ID: 72)
+[2026-03-20T10:52:09.143Z] [INFO] 📨 GET /api/chat/conversations
+[2026-03-20T10:55:09.963Z] [INFO] 📨 POST /api/chat/save
+[2026-03-20T10:55:09.986Z] [INFO] 💬 Chat saved for user 3 (ID: 73)
+[2026-03-20T10:55:10.057Z] [INFO] 📨 GET /api/chat/conversations
