@@ -20,6 +20,9 @@
 # Logs
 npm-debug.log*
 yarn-debug.log*
+*.log
 
 # OS
 .DS_Store
+__pycache__/
+dist/
